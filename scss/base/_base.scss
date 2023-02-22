@@ -1,0 +1,52 @@
+html {
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6875;
+    text-rendering: optimizeSpeed;
+}
+
+body>* {
+    flex-shrink: 0;
+}
+
+section {
+    position: relative;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    &--fluid {
+        max-width: unset;
+        width: 100%;
+    }
+
+    &--no-padding {
+        padding: 0;
+    }
+}
+
+.visually-hidden {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: block;
+    font-size: 0;
+    background-color: transparent;
+    margin-left: -10000px;
+}
+
+.footer {
+    margin-top: auto;
+}
