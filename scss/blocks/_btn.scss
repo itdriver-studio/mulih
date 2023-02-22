@@ -1,0 +1,12 @@
+.btn {
+    padding: 0 48px;
+    color: #69B99D;
+    height: 55px;
+    line-height: 55px;
+    transition: color ease-in .3s, background-color ease-in .3s;
+
+    &:hover {
+        background-color: #69B99D;
+        color: #fff;
+    }
+}
