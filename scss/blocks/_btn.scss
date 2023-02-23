@@ -5,6 +5,12 @@
     line-height: 55px;
     transition: color ease-in .3s, background-color ease-in .3s;
 
+    /*Tablet*/
+    @media (max-width: 1199px) {
+        padding: 0 20px;
+
+    }
+
     &:hover {
         background-color: #69B99D;
         color: #fff;
