@@ -8,7 +8,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #eee;
 
         /*Tablet*/
         @media (max-width: 1199px) {
@@ -92,15 +91,56 @@
 }
 
 .nav-adaptive {
-    display: none;
+    display: flex;
     position: absolute;
-    background-color: #f00;
+    background-color: #69b99d73;
     width: 100vw;
     height: 100vh;
     left: 0;
+    top: 0;
 
     /*Mobile*/
     @media (max-width: 767px) {
         display: block
+    }
+
+    &__inner {
+        width: 270px;
+        background-color: #fff;
+        margin-left: auto;
+        height: 100vh;
+
+    }
+
+    &__list {
+        font-size: 18px;
+    }
+
+    &__item {
+        padding: 10px;
+        transition: background-color ease-in .3s, color ease-in .3s;
+
+        &:hover {
+            background-color: #69B99D;
+            color: #fff;
+        }
+    }
+}
+
+.nav-adaptive__btn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.close {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+
+    &__btn {
+        width: 25px;
+        height: 25px;
     }
 }

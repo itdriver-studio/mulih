@@ -50,6 +50,11 @@ section {
     @media (max-width: 767px) {
         width: 600px;
     }
+
+    /*XS Mobile*/
+    @media (max-width: 599px) {
+        width: 320px;
+    }
 }
 
 .visually-hidden {
