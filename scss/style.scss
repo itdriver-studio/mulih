@@ -5,10 +5,12 @@
 @import "./base/fonts";
 
 //Blocks
+@import "./blocks/btn";
 @import "./blocks/header";
 @import "./blocks/logo";
 @import "./blocks/footer";
-@import "./blocks/btn";
+
+@import "./blocks/title";
 
 //Sections
 @import "./sections/nav";
