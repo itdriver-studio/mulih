@@ -83,36 +83,72 @@
                             </h3>
                         </div>
                         <div class="header-tab__general" id="buy">
-                            <ul class="header-tab__list">
-                                <li class="header-tab__item">Location
-                                    <ul>
-                                        <li>one</li>
-                                        <li>two</li>
-                                        <li>three</li>
-                                    </ul>
-                                </li>
-                                <li class="header-tab__item">Type
-                                    <ul>
-                                        <li>home</li>
-                                        <li>condo</li>
-                                        <li>apartment</li>
-                                    </ul>
-                                </li>
-                                <li class="header-tab__item">Price
-                                    <ul>
-                                        <li>1</li>
-                                        <li>2</li>
-                                        <li>3</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <button class="btn header-tab__btn">Search</button>
+                            <form action="#">
+                                <div class="form__filters">
+                                    <div class="form__filter">
+                                        <p class="form__filter-title">Location</p>
+                                        <select class="form__select" name="location" id="">
+                                            <option value="Bogor">Bogor, Jawa Barat</option>
+                                            <option value="Bisht">Bisht Kamez, Durres</option>
+                                            <option value="Risili">Risili, Vlere</option>
+                                            <option value="Tragjas">Tragjas, Orikum</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__filter">
+                                        <p class="form__filter-title">Type</p>
+                                        <select class="form__select" name="type" id="">
+                                            <option value="Home">Home</option>
+                                            <option value="Apartment">Apartment</option>
+                                            <option value="Condo">Condo</option>
+                                            <option value="Townhouse">Townhouse</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__filter">
+                                        <p class="form__filter-title">Price Range</p>
+                                        <select class="form__select" name="price" id="">
+                                            <option value="500000">$ 10000-50000</option>
+                                            <option value="100000">$ 55000-100000</option>
+                                            <option value="2000000">$ 105000-200000</option>
+                                            <option value="99999999">$ 200000+</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn header-tab__btn">Search</button>
+                                </div>
+                            </form>
                         </div>
                         <div class="header-tab__general header-tab__disabled" id="rent">
-                            <div class="header-tab__location">Location</div>
-                            <div class="header-tab__type">Type</div>
-                            <div class="header-tab__range">Price Range</div>
-                            <button class="btn header-tab__btn">Rent</button>
+                            <form action="#">
+                                <div class="form__filters">
+                                    <div class="form__filter">
+                                        <p class="form__filter-title">Location</p>
+                                        <select class="form__select" name="location" id="">
+                                            <option value="Bogor">Bogor, Jawa Barat</option>
+                                            <option value="Bisht">Bisht Kamez, Durres</option>
+                                            <option value="Risili">Risili, Vlere</option>
+                                            <option value="Tragjas">Tragjas, Orikum</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__filter">
+                                        <p class="form__filter-title">Type</p>
+                                        <select class="form__select" name="type" id="">
+                                            <option value="Home">Home</option>
+                                            <option value="Apartment">Apartment</option>
+                                            <option value="Condo">Condo</option>
+                                            <option value="Townhouse">Townhouse</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__filter">
+                                        <p class="form__filter-title">Price Range</p>
+                                        <select class="form__select" name="price" id="">
+                                            <option value="500000">$ 100-500</option>
+                                            <option value="100000">$ 500-1000</option>
+                                            <option value="2000000">$ 1050-2000</option>
+                                            <option value="99999999">$ 2000+</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn header-tab__btn">Search</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

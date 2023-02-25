@@ -1,0 +1,39 @@
+.form__filters {
+    display: flex;
+    width: 635px;
+    column-gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 22.7108px 22.7108px 42.1772px rgba(146, 106, 120, 0.16);
+
+    /*Mobile*/
+    @media (max-width: 767px) {
+        width: auto;
+        column-gap: 10px;
+        flex-direction: column;
+    }
+}
+
+.form__filter {
+
+    /*Mobile*/
+    @media (max-width: 767px) {
+        display: flex;
+    }
+}
+
+.form__select {
+    cursor: pointer;
+    color: #A6A6A6;
+}
+
+.form__filter-title {
+    margin-bottom: 5px;
+    color: #1F2744;
+
+    /*Mobile*/
+    @media (max-width: 767px) {
+        min-width: 95px;
+        margin-right: 20px;
+    }
+}

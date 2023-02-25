@@ -1,5 +1,4 @@
 .header {
-    padding-bottom: 70px;
     background-color: #f5f5f5;
     font-family: "Poppins";
 
@@ -7,14 +6,31 @@
         background-image: url("./../images/header/header-bg.png");
         background-repeat: no-repeat;
         background-position: right bottom;
+        padding-bottom: 70px;
+
+        /*Mobile*/
+        @media (max-width: 767px) {
+            background-image: url("./../images/header/header-bg__small.png");
+            background-position: right top;
+        }
+
+        /*XS Mobile*/
+        @media (max-width: 599px) {
+            background-image: none;
+        }
     }
 
     &__title {
         padding-top: 50px;
-
         max-width: 390px;
         color: #1F2744;
         margin-bottom: 15px;
+
+        /*Mobile*/
+        @media (max-width: 767px) {
+            font-size: 25px;
+            padding-top: 20px;
+        }
     }
 
     &__descr {
@@ -47,26 +63,23 @@
         }
     }
 
-    &__general {
-        padding: 20px;
-        background-color: #fff;
-        width: 490px;
-        display: flex;
-        column-gap: 26px;
-        justify-content: space-between;
-        box-shadow: 22.7108px 22.7108px 42.1772px rgba(146, 106, 120, 0.16);
-    }
+
 
     &__btn {
         min-width: 153px;
         text-align: center;
         background-color: #69B99D;
         color: #fff;
+        margin-left: auto;
+
+        /*Mobile*/
+        @media (max-width: 767px) {
+            margin-top: 20px;
+            margin-left: 0;
+        }
 
         &:hover {
             background-color: #125e43;
-
-
         }
     }
 }
@@ -83,4 +96,9 @@
 
 .header-tab__item {
     position: relative;
+}
+
+.header-tab__sublist {
+    position: absolute;
+    top: 100%;
 }
