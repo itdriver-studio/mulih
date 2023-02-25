@@ -52,6 +52,7 @@
         background-color: #fff;
         width: 490px;
         display: flex;
+        column-gap: 26px;
         justify-content: space-between;
         box-shadow: 22.7108px 22.7108px 42.1772px rgba(146, 106, 120, 0.16);
     }
@@ -72,4 +73,14 @@
 
 .header-tab__disabled {
     display: none;
+}
+
+.header-tab__list {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.header-tab__item {
+    position: relative;
 }
