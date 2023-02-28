@@ -1,0 +1,85 @@
+.reviews {
+    padding: 50px 0;
+
+    &__title {
+        color: #054457;
+        font-weight: 600;
+
+        &-wrapper {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+
+    /*Tablet*/
+    @media (max-width: 1199px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+    }
+}
+
+.client {
+    width: 310px;
+    border: 1px solid #dedcda;
+    padding: 50px 15px 15px;
+    position: relative;
+    color: #1f2744;
+
+    /*XS Mobile*/
+    @media (max-width: 599px) {
+        width: 290px;
+
+    }
+
+
+
+    &::before {
+        position: absolute;
+        content: url("./../images/review/quote.png");
+        width: 27px;
+        height: 22px;
+        top: 15px;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+    }
+
+    &__info {
+        display: flex;
+        column-gap: 10px;
+    }
+
+    &__photo {
+        width: 41px;
+        height: 41px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__name {
+        font-weight: 600;
+        color: #0B2E29;
+        font-size: 14px;
+    }
+
+    &__occupation {
+        color: #767676;
+    }
+}
