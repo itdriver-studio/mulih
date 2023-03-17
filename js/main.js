@@ -1,15 +1,22 @@
 let burger = document.querySelector('.burger');
 let menu = document.querySelector('.nav-adaptive');
-let close = document.querySelector('.close__btn');
+let closeBtn = document.querySelector('.close__btn');
 let tabPages = document.querySelectorAll('.header-tab__general');
 let tabTitles = document.querySelectorAll('.header-tab__title');
 
 burger.addEventListener('click', () => {
     menu.classList.remove('hide');
+    document.body.style.overflow = 'hidden';
+
+})
+menu.addEventListener('click', () => {
+    menu.classList.add('hide');
+    document.body.style.overflow = 'auto';
 })
 
-close.addEventListener('click', () => {
+closeBtn.addEventListener('click', () => {
     menu.classList.add('hide');
+    document.body.style.overflow = 'auto';
 })
 
 tabTitles.forEach(item => {

@@ -111,7 +111,7 @@
     top: 0;
     transform: translateX(0%);
     transition: transform ease-in .3s;
-
+    z-index: 10;
 
 
     &__inner {
